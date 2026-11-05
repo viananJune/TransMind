@@ -2,13 +2,24 @@ import { Link } from 'react-router-dom'
 import { PageHeader } from '../components/PageHeader'
 import { toolkit } from '../lib/content'
 
+function ToolkitLink({ href, label }: { href: string; label: string }) {
+  if (href.startsWith('/')) {
+    return <Link to={href}>{label}</Link>
+  }
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {label}
+    </a>
+  )
+}
+
 export function Toolkit() {
   return (
     <div className="wrap page">
       <PageHeader
         kicker="工具箱｜Toolkit"
-        title="动手之前的习惯"
-        lede="收录和阅读时实际在用的步骤。这里不介绍新产品，也不开辟广告位。"
+        title="会打开的入口"
+        lede="读论文和核对流程时会打开的入口。每条写明用途、什么时候用，以及链接。"
       />
       <ol className="toolkit">
         {toolkit.map((item, index) => (
@@ -26,7 +37,7 @@ export function Toolkit() {
             </ol>
             {item.href && item.hrefLabel ? (
               <p>
-                <Link to={item.href}>{item.hrefLabel}</Link>
+                <ToolkitLink href={item.href} label={item.hrefLabel} />
               </p>
             ) : null}
           </li>

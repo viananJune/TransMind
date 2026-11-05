@@ -38,7 +38,7 @@ export function Home() {
       <section className="masthead">
         <div className="wrap masthead-grid">
           <div>
-            <p className="kicker">个人筛选层 · 创刊样本</p>
+            <p className="kicker">个人筛选层</p>
             <h1>{site.name}</h1>
             <p className="slogan-cn">{site.sloganCn}</p>
             <p className="slogan-en" lang="en">
@@ -55,6 +55,9 @@ export function Home() {
               ) : (
                 site.banner
               )}
+            </p>
+            <p className="home-criteria">
+              高信号是还能被引用的原文：论文、官方仓库、作者自己的文章，以及写清步骤的流程。没有出处的转述、榜单，以及把演示当成评测的帖子，不进入源录。
             </p>
             <div className="actions">
               <Link className="button" to="/library">
