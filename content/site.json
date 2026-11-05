@@ -1,0 +1,14 @@
+{
+  "name": "渡知社 | TransMind",
+  "sloganCn": "渡信息之惑，择真知之源",
+  "sloganEn": "Cross the noise, reach the truth.",
+  "banner": "专注AI领域优质信息源筛选，过滤流量噱头与低质搬运，沉淀可信的前沿笔记、开源资源、论文与工程实践。",
+  "aboutLabel": "关于｜About",
+  "nav": [
+    { "to": "/library", "label": "源录｜Source Library" },
+    { "to": "/verification", "label": "甄别｜Verification" },
+    { "to": "/notes", "label": "手记｜Notes" },
+    { "to": "/digest", "label": "文摘｜Digest" },
+    { "to": "/toolkit", "label": "工具箱｜Toolkit" }
+  ]
+}
