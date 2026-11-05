@@ -222,5 +222,53 @@
     "summary": "面向消费级硬件的推理实现。值得看的是权重格式、内存占用，以及文档里的步骤能否在本机对照。",
     "whyItMatters": "它把“本地能不能跑”从一句宣传变成可检查的格式和后端。源录收的是这个仓库作为本地推理样本，不是某一次速度截图，也不是在线服务那一层。",
     "featured": false
+  },
+  {
+    "id": "lost-in-the-middle",
+    "index": "15",
+    "title": "Lost in the Middle: How Language Models Use Long Contexts",
+    "titleCn": "长上下文并不被均匀使用",
+    "type": "paper",
+    "authors": "Nelson F. Liu 等",
+    "venue": "TACL 2024",
+    "url": "https://arxiv.org/abs/2307.03172",
+    "date": "2023-07-06",
+    "added": "2026-11-19",
+    "tags": ["evaluation", "long-context"],
+    "summary": "把相关信息放在长输入的开头、中间或结尾，观察模型是否还用得上。中间位置往往更差。",
+    "whyItMatters": "窗口长度不是使用程度。这篇论文给出一个可对照的位置实验，用来拦住“上下文更长就等于每段都被读到”的说法。引用时要写上任务和位置，不要只写窗口数字。",
+    "featured": false
+  },
+  {
+    "id": "lm-eval-harness",
+    "index": "16",
+    "title": "lm-evaluation-harness",
+    "titleCn": "把评测任务跑成可复现配置",
+    "type": "tool",
+    "authors": "EleutherAI",
+    "venue": "GitHub",
+    "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+    "date": "2021-12-02",
+    "added": "2026-11-19",
+    "tags": ["evaluation", "open-source"],
+    "summary": "一套开放的语言模型评测运行器。分数来自你选中的任务、样本和版本，不是一个脱离配置的总分。",
+    "whyItMatters": "它把“我们测过”收成可以指出任务名和版本的配置。源录收它，是为了在看到排行榜时能问：跑的是哪几项、哪一版。名次本身不是结论。",
+    "featured": false
+  },
+  {
+    "id": "promptfoo",
+    "index": "17",
+    "title": "Promptfoo",
+    "titleCn": "用断言检查具体提示",
+    "type": "tool",
+    "authors": "Ian Webster",
+    "venue": "GitHub",
+    "url": "https://github.com/promptfoo/promptfoo",
+    "date": "2023-06-01",
+    "added": "2026-11-19",
+    "tags": ["evaluation", "workflow"],
+    "summary": "针对一组提示和断言做回归检查：输出是否包含、是否拒绝、是否还符合你写下的条件。",
+    "whyItMatters": "它适合检查一条工作流有没有退步，不适合代替公开基准，更不适合当成模型总榜。引用时写明断言是什么。没有断言的“感觉更好”进不了这里。",
+    "featured": false
   }
 ]
