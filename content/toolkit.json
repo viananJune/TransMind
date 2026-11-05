@@ -3,46 +3,91 @@
     "id": "three-lines",
     "title": "收录前的三行笔记",
     "titleEn": "Three lines before filing",
-    "summary": "任何外链在进入源录之前，先写下三行。写不出来就先不收。",
+    "summary": "用途：把一篇材料从待核移进源录之前，先写成可以复查的三行。",
     "href": "/notes/twenty-five-minutes",
     "hrefLabel": "论文读法见手记",
     "steps": [
-      "主张：这篇材料声称改变了什么？用一句没有形容词的话写下来。",
-      "工件：原始论文、官方仓库或可复现脚本的链接。没有工件，就标成待核。",
-      "边界：它明确不解决什么？如果正文没写，由你来写，并标明这是读后的判断。"
+      "什么时候用：准备收录，或准备转发之前。写不出来就先不收。",
+      "主张用一句没有形容词的话写下它改变了什么；工件给原始论文、官方仓库或可复现脚本。",
+      "边界写它明确不解决什么。正文没写的，标明这是读后的判断。"
     ]
   },
   {
-    "id": "tags",
-    "title": "标签约定",
-    "titleEn": "A small tag vocabulary",
-    "summary": "标签用来找回材料，不是用来堆砌热词。",
+    "id": "arxiv",
+    "title": "arXiv 分类列表",
+    "titleEn": "arXiv category lists",
+    "summary": "用途：新论文的入口。先看 cs.LG、cs.CL、cs.AI 的列表，再决定要不要读全文。",
+    "href": "https://arxiv.org/archive/cs",
+    "hrefLabel": "打开 arXiv Computer Science",
     "steps": [
-      "使用小写英文和连字符，例如 open-source、reinforcement-learning。",
-      "一条源录放 2 到 3 个标签。标签帮助筛选，而不是重复标题。",
-      "优先复用已有标签。只适合一条材料的词，写进“为何重要”即可。"
+      "什么时候用：只有博客标题或群消息，还没有论文编号的时候。",
+      "从分类列表进摘要页，核对作者、日期和版本，而不是从转述进正文。",
+      "列表本身不是条目。真正收录的是其中某一篇还值得引用的论文。"
     ]
   },
   {
-    "id": "open-original",
-    "title": "先打开原文",
-    "titleEn": "Open the original first",
-    "summary": "检索结果、转译和视频都可以是线索。收录时只承认原始工件。",
+    "id": "semantic-scholar",
+    "title": "Semantic Scholar",
+    "titleEn": "Semantic Scholar",
+    "summary": "用途：顺着引用往回看。确认一篇论文在跟谁说话，而不是只看它自己的摘要。",
+    "href": "https://www.semanticscholar.org/",
+    "hrefLabel": "打开 Semantic Scholar",
     "steps": [
-      "优先打开 arXiv 摘要页、出版社页面或官方仓库，而不是聚合站的卡片。",
-      "核对作者、日期和版本，再读正文。标题和卡片摘要不算核对。",
-      "只有网盘、短视频或无法回溯的截图时，不收录。"
+      "什么时候用：要判断一项主张是新的，还是在重复已有工作。",
+      "先看它引用了谁，再看后来谁引用了它。引用数本身不构成收录理由。",
+      "卡片上的自动摘要只作线索，原文仍以 arXiv 或出版社页面为准。"
     ]
   },
   {
-    "id": "clear-the-stack",
-    "title": "每周清空一次临时栈",
-    "titleEn": "Empty the temporary stack weekly",
-    "summary": "浏览器阅读列表只作临时栈。每周处理一次，能进源录的才留下。",
+    "id": "lilian-weng",
+    "title": "Lilian Weng 的笔记",
+    "titleEn": "Lilian Weng's blog",
+    "summary": "用途：把一条研究线索的机制、相关工作和限制写在同一篇长笔记里。",
+    "href": "https://lilianweng.github.io/",
+    "hrefLabel": "打开 lilianweng.github.io",
     "steps": [
-      "临时栈和源录分开。临时栈允许嘈杂，源录不允许。",
-      "每周固定一次：收录、丢弃，或写一句为什么还要留在待核。",
-      "留在待核超过两周仍写不出边界的，直接丢弃。需要时再检索，成本比囤积低。"
+      "什么时候用：需要一幅地图，而不是又一份当日新闻。",
+      "把它当讲解。引用机制时回到笔记里给出的原始论文。",
+      "笔记更新慢是特性。慢，不等于可以代替原文的日期和实验。"
+    ]
+  },
+  {
+    "id": "ahead-of-ai",
+    "title": "Ahead of AI",
+    "titleEn": "Sebastian Raschka's magazine",
+    "summary": "用途：由研究者按月整理的模型与论文说明，用来对照自己有没有漏掉原始报告。",
+    "href": "https://magazine.sebastianraschka.com/",
+    "hrefLabel": "打开 Ahead of AI",
+    "steps": [
+      "什么时候用：想知道这个月哪些技术报告值得打开，但不想从标题墙里捞。",
+      "通讯是目录，不是证据。要引用数字或机制，打开它链到的论文。",
+      "若一期只有排行和形容词，就整期留在临时栈，不拆进源录。"
+    ]
+  },
+  {
+    "id": "vllm",
+    "title": "vLLM",
+    "titleEn": "vLLM",
+    "summary": "用途：把大模型推理从单次演示看成可以排队的服务，核对吞吐和显存怎么被管理。",
+    "href": "https://github.com/vllm-project/vllm",
+    "hrefLabel": "打开 vLLM 仓库",
+    "steps": [
+      "什么时候用：问题是服务和排队，不是模型为什么会答对。",
+      "看仓库里的设计说明和版本，不看一张没有硬件条件的测速图。",
+      "它是系统样本。某个版本文档里的数字过时后，结论要改边界，不改成站台。"
+    ]
+  },
+  {
+    "id": "transformers",
+    "title": "Transformers",
+    "titleEn": "Hugging Face Transformers",
+    "summary": "用途：核对模型定义、分词器和模型卡是否真的对应你要引用的那一版权重。",
+    "href": "https://github.com/huggingface/transformers",
+    "hrefLabel": "打开 Transformers 仓库",
+    "steps": [
+      "什么时候用：准备复述一个模型的结构或调用方式，手上还只有聊天记录。",
+      "以仓库中的实现和模型卡为准，不以聚合站上的介绍卡片为准。",
+      "排行榜名次不是这个仓库的用途。名次不能代替配置和许可证。"
     ]
   }
 ]
