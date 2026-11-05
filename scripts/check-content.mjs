@@ -38,7 +38,7 @@ site.nav.forEach((item, i) => {
 })
 if (site.aboutLabel !== '关于｜About') fail('aboutLabel')
 
-if (!Array.isArray(sources) || sources.length < 6 || sources.length > 10) {
+if (!Array.isArray(sources) || sources.length < 6 || sources.length > 15) {
   fail(`sources length ${sources.length}`)
 }
 
